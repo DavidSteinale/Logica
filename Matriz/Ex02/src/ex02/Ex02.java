@@ -1,20 +1,29 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package ex02;
 
-/**
- *
- * @author stein
- */
+import java.util.Random;
+
 public class Ex02 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        int tamanho = 5;
+
+        int[][] matriz = new int[tamanho][tamanho];
+
+        for (int x = 0; x < tamanho; x++) {
+            for (int y = 0; y < tamanho; y++) {
+                if (x == y) {
+                    matriz[x][y] = 1;
+                } else {
+                    matriz[x][y] = 0;
+                }
+            }
+        }
+        for (int x = 0; x < matriz.length; x++) {
+            for (int y = 0; y < matriz[x].length; y++) {
+                System.out.print(matriz[x][y] + " ");
+            }
+            System.out.println();
+        }
     }
-    
 }
