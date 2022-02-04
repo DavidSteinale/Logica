@@ -17,6 +17,7 @@ public class Ex01 {
             }
         }
         System.out.println("--- Números Sortiados ---");
+        System.out.println();
         for (int x = 0; x < matriz.length; x++) {
             for (int y = 0; y < matriz[x].length; y++) {
                 System.out.print(matriz[x][y] + " ");
