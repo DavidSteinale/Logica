@@ -14,17 +14,18 @@ public class Ex03 {
 
         for (int x = 0; x < tamanho; x++) {
             for (int y = 0; y < tamanho; y++) {
-                matriz[x][y] = x*y;
+                matriz[x][y] = x * y;
             }
         }
-        
-        System.out.println("--- Números Sortiados ---");
+
+        System.out.println("--- Matriz com os produtos de Linha e Coluna ---");
+        System.out.println();
         for (int x = 0; x < matriz.length; x++) {
             for (int y = 0; y < matriz[x].length; y++) {
                 System.out.print(matriz[x][y] + " ");
             }
             System.out.println();
-
         }
+        System.out.println();
     }
 }
