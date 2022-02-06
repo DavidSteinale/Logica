@@ -1,12 +1,11 @@
-package ex08;
+package ex10;
 
 import java.util.Random;
-import javax.swing.JOptionPane;
 
-public class Ex08 {
+public class Ex10 {
 
     public static void main(String[] args) {
-        Random random = new Random();
+ Random random = new Random();
 
         int tamanho = 3;
         int soma = 0;
@@ -28,13 +27,13 @@ public class Ex08 {
         }
         for (int x = 0; x < tamanho; x++) {
             for (int y = 0; y < tamanho; y++) {
-                if (x < y) {
+                if (x == y) {
                     soma += matriz[x][y];
                 }
             }
         }
         System.out.println();
-        System.out.println("Soma dos elementos que estão cima da Dp: " + soma);
+        System.out.println("Soma dos elementos que estão na Dp: " + soma);
         System.out.println();
     }
 
