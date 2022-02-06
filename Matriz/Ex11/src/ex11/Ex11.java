@@ -36,5 +36,4 @@ public class Ex11 {
         System.out.println("Soma dos elementos que estão na Ds: " + soma);
         System.out.println();
     }
-
 }
