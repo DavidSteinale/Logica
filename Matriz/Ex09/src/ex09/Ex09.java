@@ -1,14 +1,13 @@
-package ex08;
+package ex09;
 
 import java.util.Random;
-import javax.swing.JOptionPane;
 
-public class Ex08 {
+public class Ex09 {
 
     public static void main(String[] args) {
         Random random = new Random();
 
-        int tamanho = 3;
+        int tamanho = 4;
         int soma = 0;
 
         int[][] matriz = new int[tamanho][tamanho];
@@ -28,7 +27,7 @@ public class Ex08 {
         }
         for (int x = 0; x < tamanho; x++) {
             for (int y = 0; y < tamanho; y++) {
-                if(x<y){
+                if(x>y){
                     soma+=matriz[x][y];
                 }                
             }

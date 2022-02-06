@@ -12,12 +12,12 @@ public class Ex07 {
 
         for (int x = 0; x < tamanho; x++) {
             for (int y = 0; y < tamanho; y++) {
-                if (x < y) {
+              /*  if (x < y) {
                     matriz[x][y] = (2 * x) + (7 * y) - 2;
                 }
                 if (x == y) {
                     matriz[x][y] = ((3 * Math.pow(x, 2)) - 1);
-                }
+                }*/
                 if (x > y) {
                     matriz[x][y] = ((4 * Math.pow(x, 3)) - (5 * Math.pow(y, 2)));
                 }
