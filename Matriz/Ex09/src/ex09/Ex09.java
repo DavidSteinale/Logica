@@ -7,7 +7,7 @@ public class Ex09 {
     public static void main(String[] args) {
         Random random = new Random();
 
-        int tamanho = 4;
+        int tamanho = 3;
         int soma = 0;
 
         int[][] matriz = new int[tamanho][tamanho];
@@ -33,7 +33,7 @@ public class Ex09 {
             }
         }
         System.out.println();
-        System.out.println("Soma dos elementos que estão cima da Dp: " +soma);
+        System.out.println("Soma dos elementos que estão abaixo da Dp: " +soma);
         System.out.println();
     }
 
