@@ -33,26 +33,35 @@ public class Ex17 {
             }
             System.out.println("----------");
         }
+        System.out.println();
 
-        //MATRIZ PARA FAZER A CONPARAÇÃO DAS NOTAS DIGITADAS COM O GABARITO E CALCULA O PERCENTUAL DE APROVADOS
+        // SOMA OS VALORES CONTIDO NAS COLUNAS E VINCULA NO ARRAY
         for (int x = 0; x < resposta.length; x++) {
-            for (int y = 0; y < resposta[0].length; y++) {
+            for (int y = 0; y < resposta[x].length; y++) {
                 if (resposta[y][x] == 'a') {
-                   // resposta[0][0] != 'a'
-                   // resposta[1][0] != 'a'
-                   // resposta[2][0] != 'a'
-                   
-                   // resposta[0][1] != 'a'
-                   // resposta[1][1] != 'a'
-                   // resposta[2][1] != 'a'
-                   
+                } else {
                     piorNotaProvaUm++;
-                    piorNota[x] = piorNotaProvaUm;
                 }
-                
+                if (resposta[y][x] == 'b') {
+                } else {
+                    piorNotaProvaDois++;
+                }
+                if (resposta[y][x] == 'c') {
+                } else {
+                    piorNotaProvaTres++;
+                }
             }
+            piorNota[x] = piorNotaProvaUm;
+            piorNotaProvaUm=0;
         }
 
+        // MOSTRA O ARRAY
+        System.out.println();
+        System.out.println("---Array com a soma dos valores por coluna---");
+        System.out.println();
+        for (int valor : piorNota) {
+            System.out.print(valor + " ");
+        }
         System.out.println();
         System.out.println("--- RESPOSTAS DO ALUNOS ---");
         System.out.println();
@@ -62,15 +71,6 @@ public class Ex17 {
             }
             System.out.println();
         }
-        System.out.println("----------");
-        //MOSTRA O VETOR RESULTADO COM A PONTUAÇÃO DE CADA ALUNO.
-      /*  System.out.println();
-        for (int x = 0; x < piorNota.length; x++) {
-            System.out.println("qtd de piores notas prova numero"+(x+1)+" é " + piorNota[x]);        
-        }        
-        System.out.println();*/
-      
-        System.out.println("qtd de pior nota da 1 prova " + piorNotaProvaUm); 
     }
 
 }
