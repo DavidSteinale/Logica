@@ -17,7 +17,7 @@ public class Ex15 {
         int[] resultado = new int[linha];
 
         //MATRIZ PARA RECEBER AS NOTAS
-        System.out.println("Informe às respostas:");
+        System.out.println("Informe às respostas(a,b,c,d):");
         for (int x = 0; x < resposta.length; x++) {
             System.out.println("------");
             for (int y = 0; y < resposta[x].length; y++) {
