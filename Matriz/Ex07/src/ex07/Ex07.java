@@ -19,7 +19,7 @@ public class Ex07 {
                     matriz[x][y] = ((3 * Math.pow(x, 2)) - 1);
                 }
                 if (x > y) {
-                    matriz[x][y] = ((4 * Math.pow(x, 3)) - (5 * Math.pow(y, 2)));
+                    matriz[x][y] = ((4 * Math.pow(x, 3)) - (5 * Math.pow(y, 2)))+1;
                 }
             }
         }
