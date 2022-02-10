@@ -150,9 +150,8 @@ public class Ex21 {
                     }
                     break;
             }
-            System.out.println("Deseja repetir o processo: 1 - SIM | 0 - NÃO?");
+            System.out.print("Deseja repetir o processo: 1 - SIM | 0 - NÃO?");
             op = scanner.nextInt();
         } while (op == 1);
     }
-
 }
